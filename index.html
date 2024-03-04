@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Stats preview card component</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif; /* Added a font family for better readability */
+      text-align: center; /* Center align the content */
+      background: #0A0C1B;
+    }
+
+    .container {
+      display: flex; /* Use Flexbox for layout */
+      max-width: 800px; /* Added for better layout on larger screens */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px; /* Added some padding for spacing */
+    }
+
+    .text-container {
+      flex: 1; /* Make the text container take up equal space */
+      text-align: left; /* Left align text within the container */
+      padding: 35px; /* Add padding to the text container */
+      background-color: #1C1938; /* Set background color for the text container */
+      color: white; /* Set text color */
+    }
+
+    .image-container {
+      flex: 1; /* Make the image container take up equal space */
+      display: flex; /* Use Flexbox for layout */
+      align-items: center; /* Center align the image vertically */
+      justify-content: center; /* Center align the image horizontally */
+      background-color: rgba(165, 85, 207, 0.5); /* Transparent purple background color */
+    }
+
+    .image {
+      width: 100%; /* Make sure the image doesn't overflow its container */
+      height: auto; /* Ensure the image fits the container without squeezing */
+      object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+      filter: hue-rotate(180deg); /* Rotate hue to make the image purple */
+    }
+
+    .stats {
+      display: flex; /* Use Flexbox for layout */
+      justify-content: space-between; /* Distribute items evenly */
+      margin-top: 20px; /* Add some spacing between the text and stats */
+      text-transform: uppercase;
+    }
+
+    .attribution {
+      color: white;
+      font-size: 11px;
+      text-align: center;
+      margin-top: 20px; /* Add some spacing at the bottom */
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .insights {
+      color: #7E56AE;
+    }
+
+    .discover {
+      color: grey;
+      font-size: 13px;
+      font-weight: lighter;
+    }
+
+    .smaller {
+      color: grey;
+      font-size: 12px;
+      font-weight: lighter;
+    }
+
+    p {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-container">
+      <h2>Get <span class="insights">insights</span> that help your business grow.</h2>
+      <p class="discover">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+      <div class="stats">
+        <p>10k+ <br><span class="smaller">companies</span></p>
+        <p>314 <br><span class="smaller">templates</span></p>
+        <p>12m+ <br><span class="smaller">queries</span></p>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="image" src="./images/image-header-desktop.jpg" alt="Your Image">
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Dhara Tina Kara</a>.
+  </div>
+</body>
+</html>
